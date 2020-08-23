@@ -8,7 +8,11 @@ const IndexPage = () => {
   const [data, setData] = React.useState("")
 
   React.useEffect(() => {
-    console.log(process.env.GATSBY_API_URL)
+    console.log({
+      URL: process.env.GATSBY_API_URL,
+      AUTH: process.env.AUTH_API,
+      EMAIL: process.env.DEFAULT_EMAIL
+    })
   })
 
   const fetchapi = async ( e ) => {
