@@ -7,6 +7,10 @@ import SEO from "../components/seo"
 const IndexPage = () => {
   const [data, setData] = React.useState("")
 
+  React.useEffect(() => {
+    console.log(process.env.API_URL)
+  })
+
   const fetchapi = async ( e ) => {
     const { value } = e.target
     const { data } = await Axios.get(process.env.API_URL + value)
