@@ -10,8 +10,8 @@ const IndexPage = () => {
   React.useEffect(() => {
     console.log({
       URL: process.env.GATSBY_API_URL,
-      AUTH: process.env.AUTH_API,
-      EMAIL: process.env.DEFAULT_EMAIL
+      AUTH: process.env.GATSBY_AUTH_API,
+      EMAIL: process.env.GATSBY_DEFAULT_EMAIL
     })
   })
 
